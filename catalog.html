@@ -60,7 +60,7 @@
         </li>
       </ul>
     </header>
-    <section class="catalog-products">
+    <section class="catalog-filter-section">
       <h2 class="visually-hidden">Список товаров с фильтрами</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
@@ -139,6 +139,41 @@
         <button class="button" type="submit">Применить</button>
         <button class="button" type="reset">Сбросить</button>
       </form>
+    </section>
+    <section class="catalog-sorting-section">
+      <h2 class="catalog-sorting visually-hidden">Сортирование</h2>
+      <form class="sorting-type">
+        <label class="visually-hidden" for="sorting">Сортировка</label>
+        <select class="select-control" id="sorting" name="sorting">
+          <option value="popular">Сначала популярное</option>
+          <option value="cheap">Сначала дешёвое</option>
+          <option value="expensive">Сначала дорогое</option>
+        </select>
+        <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+      </form>
+      <a href="#" class="button">
+        <span class="visually-hidden">Показать карточки</span>
+      </a>
+      <a href="#" class="button">
+        <span class="visually-hidden">Показать на весь екран</span>
+      </a>
+      <a href="#" class="button button-dark">
+        <span class="visually-hidden">Показать список</span>
+      </a>
+    </section>
+    <section class="catalog-list-section">
+      <h2 class="catalog-list visually-hidden">Список</h2>
+      <div class="hotel">
+        <a class="hotel-link" href="#">
+          <img class="hotel-image" src="" alt="Amara Resort & Spa">
+          <h3 class="hotel-title">Amara Resort & Spa</h3>
+          <p class="hotel-type">Гостиница</p>
+        </a>
+        <p class="hotel-price">От 4000 ₽</p>
+        <a href="#" class="hotel-about-button button">Подробнее</a>
+        <button href="#" class="chosen">В избранное</button>
+      </div>
+    </section>
   </main>
   <footer class="page-footer">
     <section>
