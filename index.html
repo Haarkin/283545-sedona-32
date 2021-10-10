@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -39,7 +40,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
+          <a class="navigation-link button secondary-button navigation-button" href="#">
             Хочу сюда!
           </a>
         </li>
@@ -51,8 +52,8 @@
     <img class="index-welcome-picture" src="images/icons/welcome.svg" alt="Welcome to the gorgeous Sedona Because the Grand Canyon sucks!">
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
-      <p>
-        Седона — небольшой городок в Аризоне, заслуживающий большего!
+      <p class="sedona-title">
+        Седона — небольшой городок в Аризоне,<br> заслуживающий большего!
       </p>
       <p class="advantages-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <ol>
@@ -104,18 +105,18 @@
         </li>
       </ol>
     </section>
-    <section>
-      <h2>Заинтересовались?</h2>
+    <section class="hotel-search">
+      <h2 class="hotel-search-title">Заинтересовались?</h2>
       <p>
         Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
-      <a class="button button-all" href="#">Поиск гостиницы в Седоне</a>
+      <a class="button secondary-button button-large" href="#">Поиск гостиницы в Седоне</a>
     </section>
   </main>
   <footer class="page-footer">
-    <section>
-      <h2>Подпишитесь на рассылку</h2>
+    <section class="subscription-form">
+      <h2 class="subscription-form-title">Подпишитесь на рассылку</h2>
       <form class="submit-form">
         <p>Только полезная информация и никакого спама,
           честное бойскаутское!</p>
@@ -125,7 +126,7 @@
           </label>
           <input class="field" type="text" id="email-field" name="email-field">
         </p>
-        <button class="button" type="submit">Подписаться</button>
+        <button class="button button-large" type="submit">Подписаться</button>
       </form>
     </section>
     <section class="footer-contacts">
