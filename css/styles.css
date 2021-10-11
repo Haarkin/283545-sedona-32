@@ -2,7 +2,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/ptsans-400.woff2") format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -10,22 +10,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/ptsans-700.woff2") format("woff2");
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "PT Sans";
-    font-style: italic;
-    font-weight: 400;
-    src: url("fonts/ptsans-400.woff2") format("woff2");
-  }
-
-  @font-face {
-    font-family: "PT Sans";
-    font-style: italic;
-    font-weight: 700;
-    src: url("fonts/ptsans-700.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
   }
 
@@ -59,34 +44,30 @@
   }
 
   .navigation-link {
-      font-weight: 700;
-      color: #000000;
-      text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
   }
 
   .navigation-button {
-      color: #FFFFFF;
+    color: #FFFFFF;
   }
 
   .main-index {
-    background-image: url("images\fonts\index-background.jpg");
+    background-image: url("../images/backgrounds/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
 
-  .index-welcome-picture {
-    
-  }
-
   .sedona-title {
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 30px;
-      line-height: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
   }
 
   .advantages {
-      text-align: center;
+    text-align: center;
   }
 
   .advantages-reasons {
@@ -114,7 +95,7 @@
   }
 
   .subscription-form {
-      background-image: url("images\fonts\background-footer.jpg");
+      background-image: url("../images/backgrounds/background-footer.jpg");
       text-align: center;
   }
 
@@ -149,5 +130,5 @@
   }
 
   .inner-header-title {
-      background-image: url("images\fonts\catalog-background.jpg");
+      background-image: url("../images/backgrounds/catalog-background.jpg");
   }
