@@ -47,7 +47,8 @@
       </ul>
     </nav>
   </header>
-  <main class="main-index">
+  <main class="main-container main-index">
+    <div class="page-container">
     <h1 class="visually-hidden">Седона</h1>
     <img class="index-welcome-picture" src="images/icons/welcome.svg" alt="Welcome to the gorgeous Sedona Because the Grand Canyon sucks!">
     <section class="advantages">
@@ -56,26 +57,28 @@
         Седона — небольшой городок в Аризоне,<br> заслуживающий большего!
       </p>
       <p class="advantages-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      <ol>
+      <ol class="advantages-list">
         <li class="advantages-item">
+          
           <h3 class="advantages-title">Настоящий
             городок</h3>
           <p class="advantage-description">Седона — не аттракцион для туристов, там течёт
             своя жизнь</p>
+          
             <img src="images/photos/first-photo.jpg" alt="Город">
-          <ul>
-            <li class="advantages-item">
+          <ul class="advantages-list-inside">
+            <li class="advantages-item-point">
               <h4 class="advantages-title">Жильё</h3>
                 <p class="advantage-description">Рекомендуем пожить
                   в настоящем мотеле,
                   всё как в кино!</p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item-point">
               <h4 class="advantages-title">Еда</h3>
                 <p class="advantage-description">Всегда заказывайте
                   топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item-point">
               <h4 class="advantages-title">Сувениры</h3>
                 <p class="advantage-description">Не только китайского,
                   но и настоящего местного производства!</p>
@@ -84,9 +87,11 @@
         </li>
         <li class="advantages-item">
           <img src="images/photos/second-photo.jpg" alt="Мост Дьявола">
+          
           <h3 class="advantages-title">Там есть
             мост дьявола</h3>
           <p class="advantage-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        
         </li>
         <li class="advantages-item">
           <h3 class="advantages-title">Небольшая
@@ -113,13 +118,16 @@
       </p>
       <a class="button secondary-button button-large" href="#">Поиск гостиницы в Седоне</a>
     </section>
+  </div>
   </main>
   <footer class="page-footer">
+    <div class="footer-container">
     <section class="subscription-form">
       <h2 class="subscription-form-title">Подпишитесь на рассылку</h2>
       <form class="submit-form">
         <p>Только полезная информация и никакого спама,
           честное бойскаутское!</p>
+          <div class="email-container">
         <p class="email">
           <label for="email-field" class="visually-hidden">
             Ваш e-mail
@@ -127,6 +135,7 @@
           <input class="field" type="text" id="email-field" name="email-field">
         </p>
         <button class="button button-large" type="submit">Подписаться</button>
+      </div>
       </form>
     </section>
     <section class="footer-contacts">
@@ -162,6 +171,7 @@
         </a>
       </p>
     </section>
+  </div>
   </footer>
 </body>
 

@@ -14,7 +14,15 @@
     font-display: swap;
   }
 
+  html {
+    height: 100%;
+  }
+
   body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -43,6 +51,26 @@
     line-height: 26px;
   }
 
+  .navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 310px;
+    margin-right: 150px;
+  }
+
+  .navigation-user {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    margin-left: auto;
+  }
+
   .navigation-link {
     font-weight: 700;
     color: #000000;
@@ -53,10 +81,24 @@
     color: #FFFFFF;
   }
 
+  .main-container {
+    flex-grow: 1;
+  }
+
   .main-index {
     background-image: url("../images/backgrounds/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+  }
+
+  .page-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .index-welcome-picture {
+    display: block;
+    margin: 0 auto;
   }
 
   .sedona-title {
@@ -68,6 +110,24 @@
 
   .advantages {
     text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .advantages-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .advantages-item {
+    width: 1200px;
+  }
+
+  .advantages-list-inside {
+    display: flex;
+    justify-content: space-between;
   }
 
   .advantages-reasons {
@@ -94,6 +154,11 @@
       text-transform: uppercase;
   }
 
+  .footer-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
   .subscription-form {
       background-image: url("../images/backgrounds/background-footer.jpg");
       text-align: center;
@@ -103,6 +168,21 @@
       text-transform: uppercase;
   }
 
+  .email-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-contacts {
+    display: flex;
+  }
+
+  .footer-social-list {
+    display: flex;
+    width: 120px;
+    margin-right: 60px;
+  }
+
   .footer-social-link {
       color: #000000;
   }
@@ -110,7 +190,12 @@
   .footer-contacts-address-phone {
       color: #000000;
       font-size: 40px;
-    line-height: 40px;
+      line-height: 40px;
+      width: 720px;
+  }
+
+  .about-text {
+    margin-left: auto;
   }
 
   .secondary-button {
