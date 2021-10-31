@@ -43,7 +43,7 @@
   }
 
   .button-large {
-      font-weight: 700;
+    font-weight: 700;
   }
 
   .page-header {
@@ -124,18 +124,11 @@
   .advantages-item {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .advantages-item:nth-child(3) {
     width: 400px;
   }
 
-  .advantages-item:nth-child(4) {
-    width: 400px;
-  }
-
-  .advantages-item:nth-child(5) {
-    width: 400px;
+  .advantages-item-large {
+    width: 1200px;
   }
 
   .advantage-container {
@@ -202,7 +195,7 @@
 
   .footer-social-list {
     display: flex;
-    width: 120px;
+    width: 100px;
     margin-right: 60px;
     flex-grow: 1;
   }
@@ -218,6 +211,7 @@
 
   .about-text {
     flex-grow: 1;
+    width: 100px;
   }
 
   .secondary-button {
