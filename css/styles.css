@@ -230,6 +230,36 @@
       font-size: 16px;
   }
 
-  .inner-header-title {
+  .catalog-filter-background {
       background-image: url("../images/backgrounds/catalog-background.jpg");
+  }
+
+  .catalog-filter {
+    display:flex;
+  }
+
+  .filter-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog-sorting-section {
+    display: flex;
+  }
+
+  .catalog-list-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hotel {
+    display: flex;
+  }
+
+  .pagination-container {
+    display:flex;
+  }
+
+  .pagination {
+    display: flex;
   }
