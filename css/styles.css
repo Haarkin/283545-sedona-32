@@ -171,8 +171,32 @@
   .advantages-list {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-areas: "city city city"
+                         "city city city"
+                         "bridge bridge bridge"
+                         "area road tourists";
+  }
+
+  .city {
+    grid-area: city;
+  }
+
+  .bridge {
+    grid-area: bridge;
+  }
+
+  .area {
+    grid-area: area;
+  }
+
+  .road {
+    grid-area: road;
+  }
+
+  .tourists {
+    grid-area: tourists;
   }
 
   .advantages-item {
@@ -189,6 +213,7 @@
 
   .advantages-item-large {
     width: 1200px;
+    padding: 0;
   }
 
   .advantage-container {
@@ -200,6 +225,7 @@
   .advantages-list-inside {
     display: flex;
     list-style-type: none;
+    padding: 0;
   }
 
   .advantages-item-point {
