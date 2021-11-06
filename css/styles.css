@@ -319,6 +319,8 @@
     display: flex;
     padding-top: 45px;
     padding-bottom: 40px;
+    padding-right: 72px;
+    padding-left: 72px;
   }
 
   .select-control {
@@ -341,6 +343,53 @@
 
   .hotel {
     display: grid;
+    padding: 30px 72px;
+    grid-template-columns: 180px 150px 160px 1fr;
+    grid-template-rows: 40px 40px 40px;
+    grid-template-areas: "img title title title"
+                         "img hotel-type price ."
+                         "img about chosen rate";
+    column-gap: 35px;                     
+  }
+
+  .hotel-image {
+    grid-area: img;
+  }
+
+  .hotel-link {
+    grid-area: title;
+    display: flex;
+  }
+
+  .hotel-title {
+    text-align: start;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .stars {
+    margin-left: auto;
+  }
+
+  .hotel-type {
+    grid-area: hotel-type;
+  }
+
+  .hotel-price {
+    grid-area: price;
+  }
+
+  .hotel-about-button {
+    grid-area: about;
+  }
+
+  .chosen {
+    grid-area: chosen;
+  }
+
+  .rating-number {
+    grid-area: rate;
+    text-align: end;
   }
 
   .show-more-button-container {
