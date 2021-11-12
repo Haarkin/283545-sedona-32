@@ -27,7 +27,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #E5E5E5;
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .visually-hidden {
@@ -102,26 +102,24 @@ body {
   background-color: #7DB54F;
 }
 
-.button-succes:hover {
+.button-success:hover {
   background-color: rgba(108, 158, 66, 1);
 }
 
-.button-succes:focus {
+.button-success:focus {
   background-color: rgba(108, 158, 66, 1);
   outline: 3px solid rgba(117, 98, 87, 1);
 }
 
-.button-succes:active {
+.button-success:active {
   background-color: rgba(108, 158, 66, 1);
   color: rgba(255, 255, 255, 0.3);
   outline: none;
 }
 
 .button-ghost {
-  
   background-color: transparent;
   border: none;
-  
 }
 
 .button-ghost:hover {
@@ -140,10 +138,10 @@ body {
 
 .button-reset {
   display: inline-block;
-  padding-top: 10px;
-  padding-bottom: 11px;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
   font-family: inherit;
   font-size: 16px;
   line-height: 16px;
@@ -151,7 +149,7 @@ body {
   text-align: center;
   color: #FFFFFF;
   text-decoration: none;
-  width: 160px;
+  width: 80px;
   margin: 0 auto;
 }
 
@@ -164,7 +162,7 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 0 5px 0 #34495e;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
 }
 
@@ -284,7 +282,7 @@ body {
 
 .navigation-button {
   color: #FFFFFF;
-  width: 180px;
+  width: 136px;
 }
 
 .navigation-button:hover {
@@ -293,12 +291,13 @@ body {
 
 .navigation-button:focus {
   background: rgba(97, 80, 72, 1);
-  border: 3px solid rgba(131, 179, 211, 1);
+  outline: 3px solid rgba(131, 179, 211, 1);
 }
 
 .navigation-button:active {
   background: rgba(97, 80, 72, 1);
   color: rgba(255, 255, 255, 0,3);
+  outline: none;
 }
 
 .main-container {
@@ -308,7 +307,7 @@ body {
 .page-container {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 5px 5px 0 #34495e;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
 }
 
@@ -457,22 +456,27 @@ body {
 
 .breadcrumbs-item {
   position: relative;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .breadcrumbs-item::after {
   position: absolute;
-  top: 10px;
+  top: 7px;
   right: -20px;
   width: 8px;
   height: 8px;
   background-image: url("../images/icons/breadcrumbs-arrow.svg");
+  background-repeat: no-repeat;
   content: "";
   margin-right: 10px;
 }
 
 .breadcrumbs-item:last-child::after {
-  content: none;
+  display: none;
+}
+
+.breadcrumbs-link {
+  margin-right: 10px;
 }
 
 .hotel-search {
@@ -554,6 +558,7 @@ body {
   padding-bottom: 40px;
   padding-right: 72px;
   padding-left: 72px;
+  align-items: center;
 }
 
 .select-control {
@@ -571,10 +576,15 @@ body {
   border-radius: 4px;
   margin-right: 8px;
   padding: 15px 15px;
+  max-height: 50px;
 }
 
-.sorting-button:last-child {
-  margin-right: 80px;
+.sorting-button:hover {
+  border: 2px solid rgba(131, 179, 211, 1);
+}
+
+.sorting-button:focus {
+  border: 2px solid rgba(131, 179, 211, 1);
 }
 
 .sorting-button-active {
@@ -686,6 +696,11 @@ body {
   grid-area: rate;
   text-align: center;
   margin: 0;
+  background-color: rgba(242, 242, 242, 1);
+  padding-top: 9px;
+  padding-bottom: 10px;
+  align-self: center;
+  border-radius: 4px;
 }
 
 .show-more-button-container {
@@ -726,8 +741,9 @@ body {
   display: block;
   box-sizing: border-box;
   width: 55px;
-  height: 55px;
   padding: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: #83B3D3;
   text-decoration: none;
   line-height: 25px;
@@ -769,7 +785,7 @@ body {
 .footer-container {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 5px 5px 0 #34495e;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
 }
 
