@@ -131,20 +131,28 @@
 
             <fieldset class="catalog-filter-group price-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <button class="range-toggle toggle-min" type="button">
-                <span class="visually-hidden">Изменить минимальную цену.</span>
-              </button>
-              <button class="range-toggle toggle-max" type="button">
-                <span class="visually-hidden">Изменить максимальную цену.</span>
-              </button>
+              <div class="range">
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                     <input class="catalog-filter-input" type="number" name="min-price" placeholder="0"> от
+                  </label>
 
-              <label class="catalog-filter-label">
-                от <input class="catalog-filter-input" type="number" name="min-price"> ₽
-              </label>
+                  <label class="catalog-filter-label">
+                    <input class="catalog-filter-input" type="number" name="max-price" placeholder="9000"> до
+                  </label>
+                </div>
 
-              <label class="catalog-filter-label">
-                до <input class="catalog-filter-input" type="number" name="max-price"> ₽
-              </label>
+                <div class="range-scale">
+                  <div class="range-bar" style="width: 227px">
+                   <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                   </button>
+                   <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                   </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <div class="filter-buttons">
               <button class="button enforce-button" type="submit">Применить</button>
@@ -322,9 +330,9 @@
               <label for="email-field" class="visually-hidden">
                 Ваш e-mail
               </label>
-              <input class="field" type="text" id="email-field" name="email-field">
+              <input class="field" placeholder="Ваш e-mail" type="text" id="email-field" name="email-field" required>
             </p>
-            <button class="button button-large" type="submit">Подписаться</button>
+            <button class="button button-large submit-button" type="submit">Подписаться</button>
           </div>
         </form>
       </section>
