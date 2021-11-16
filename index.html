@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -35,7 +36,7 @@
                     fill="colorCurrent" />
                 </g>
                 <defs>
-                  <clipPath id="a">
+                  <clipPath>
                     <path fill="#fff" d="M0 0h18v18H0z" />
                   </clipPath>
                 </defs>
@@ -55,7 +56,7 @@
               <ul class="popup-chosen-list">
                 <li class="popup-chosen-list-item">
                   <a class="popup-hotel-description" href="#">
-                    <img src="images/photos/hotel-2-small.png" alt="Desert Quail Inn">
+                    <img class="popup-hotel-image" src="images/photos/hotel-2-small.png" alt="Desert Quail Inn">
                     <div class="popup-hotel-container">
                       <p class="popup-hotel-title">Desert Quail Inn</p>
                       <p class="popup-hotel-type">Мотель</p>
@@ -140,21 +141,21 @@
                 <p class="advantage-description">Седона — не аттракцион для туристов, там течёт <br>
                   своя жизнь</p>
               </div>
-              <img src="images/photos/first-photo.jpg" alt="Город">
+              <img src="images/photos/first-photo.jpg" alt="Город" class="city-img">
               <ul class="advantages-list-inside">
                 <li class="advantages-item-point advantages-item-point-home">
-                  <h4 class="advantages-title">Жильё</h3>
+                  <h4 class="advantages-title">Жильё</h4>
                     <p class="advantage-description">Рекомендуем пожить<br>
                       в настоящем мотеле,<br>
                       всё как в кино!</p>
                 </li>
                 <li class="advantages-item-point advantages-item-point-food">
-                  <h4 class="advantages-title">Еда</h3>
+                  <h4 class="advantages-title">Еда</h4>
                     <p class="advantage-description">Всегда заказывайте <br>
                       топовый фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li class="advantages-item-point advantages-item-point-souvenir">
-                  <h4 class="advantages-title">Сувениры</h3>
+                  <h4 class="advantages-title">Сувениры</h4>
                     <p class="advantage-description">Не только китайского,<br>
                       но и настоящего местного<br> производства!</p>
                 </li>
@@ -215,7 +216,7 @@
         </section>
         <section class="footer-contacts">
           <h2 class="visually-hidden">Соцсети</h2>
-          <ul class="footer-social-list" name="link-list">
+          <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="footer-social-link" href="#">
                 <svg width="18" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -225,7 +226,7 @@
                       fill="currentColor" />
                   </g>
                   <defs>
-                    <clipPath id="a">
+                    <clipPath>
                       <path fill="#fff" d="M0 0h18v15H0z" />
                     </clipPath>
                   </defs>

@@ -192,6 +192,11 @@ body {
   margin-top: -3px;
 }
 
+.page-header-logo {
+  width: 138px;
+  height: 76px;
+}
+
 .navigation-logo:focus {
   outline: 2px solid #6086a0;
 }
@@ -369,6 +374,9 @@ body {
 
 .popup-hotel-image {
   margin-right: 17px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
 }
 
 .popup-hotel-description {
@@ -723,6 +731,8 @@ body {
 .index-welcome-picture {
   display: block;
   margin: 0 auto;
+  width: 458px;
+  height: 352px;
 }
 
 .sedona-title {
@@ -787,7 +797,13 @@ body {
   color: #FFFFFF;
 }
 
+.city-img {
+  width: 800px;
+  height: 384px;
+}
+
 .bridge-img {
+  width: 800px;
   height: 384px;
 }
 
@@ -1317,6 +1333,11 @@ body {
 
 .hotel-image-link:active {
   opacity: 0.3;
+}
+
+.hotel-image {
+  width: 180px;
+  height: 120px;
 }
 
 .hotel-link {
