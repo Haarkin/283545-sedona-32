@@ -62,7 +62,7 @@
                       <p class="popup-hotel-type">Мотель</p>
                     </div>
                   </a>
-                  <a class="popup-trash-bin" href="#">
+                  <button class="popup-trash-bin" type="reset">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="0.2">
                         <path
@@ -79,7 +79,7 @@
                           fill="black" />
                       </g>
                     </svg>
-                  </a>
+                  </button>
                 </li>
                 <li class="popup-chosen-list-item">
                   <a class="popup-hotel-description" href="#">
@@ -89,7 +89,7 @@
                       <p class="popup-hotel-type">Аппартаменты</p>
                     </div>
                   </a>
-                  <a class="popup-trash-bin" href="#">
+                  <button class="popup-trash-bin" type="reset">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="0.2">
                         <path
@@ -106,10 +106,10 @@
                           fill="black" />
                       </g>
                     </svg>
-                  </a>
+                  </button>
                 </li>
               </ul>
-              <button class="button button-large secondary-button all-chosen-button">Все избранные</button>
+              <a class="button button-large secondary-button all-chosen-button" href="#">Все избранные</a>
             </div>
           </li>
           <li class="navigation-item">
@@ -208,7 +208,7 @@
                 <label for="email-field" class="visually-hidden">
                   Ваш e-mail
                 </label>
-                <input class="field" placeholder="Ваш e-mail" type="text" id="email-field" name="email-field" required>
+                <input class="field" placeholder="Ваш e-mail" type="email" id="email-field" name="email-field" required>
               </p>
               <button class="button button-large submit-button" type="submit">Подписаться</button>
             </div>
@@ -263,6 +263,89 @@
         </section>
       </div>
     </footer>
+  </div>
+  <div class="modal-registration disable">
+    <div class="modal-registration-container">
+      <div class="modal-header">
+        <button class="modal-close-button" type="reset">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        </section>
+      </div>
+      <form class="modal-register-form">
+        <p class="modal-register-form-item">
+          <label for="arriving-date" class="modal-register-label">
+            Дата заезда:
+          </label>
+          <input class="modal-field field-date" placeholder="27 апреля 2020" type="text" id="arriving-date"
+            name="arriving-date" required>
+          <span class="modal-message modal-message-error">Мы не можем отправить вас в прошлое.</span>
+        </p>
+        <p class="modal-register-form-item last-item">
+          <label for="leaving-date" class="modal-register-label">
+            Дата выезда:
+          </label>
+          <input class="modal-field field-date" placeholder="1 сентября 2021" type="text" id="leaving-date"
+            name="leaving-date" required>
+          <span class="modal-message">На эти даты есть свободные номера. Пока есть.</span>
+        </p>
+        <div class="modal-counter-container">
+          <p class="modal-register-form-item modal-counter">
+            <label for="mature-count" class="modal-register-label">
+              Взрослые:
+            </label>
+            <span class="modal-input">
+              <button class="modal-input-increase modal-input-button" type="button">
+                <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" />
+                </svg>
+              </button>
+              <input class="modal-field" placeholder="2" type="number" id="mature-count" name="mature-count" required>
+              <button class="modal-input-decrease modal-input-button" type="button">
+                <svg width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0v1h13V0H0Z" fill="#000" />
+                </svg>
+              </button>
+            </span>
+          </p>
+          <p class="modal-register-form-item modal-counter">
+            <span class="modal-register-label">
+              <label for="children-count">
+                Дети:
+              </label>
+              <span class="info-popup">
+                <button class="modal-info" type="button">
+                  <svg width="1" height="9" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 9h1V3H0v6Zm1-9H0v1h1V0Z" />
+                  </svg>
+                </button>
+                <span class="info-popup-text disable">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                  размещаются бесплатно.
+                </span>
+              </span>
+            </span>
+            <span class="modal-input">
+              <button class="modal-input-increase modal-input-button" type="button">
+                <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000" />
+                </svg>
+              </button>
+              <input class="modal-field" placeholder="1" type="number" id="children-count" name="children-count"
+                required>
+              <button class="modal-input-decrease modal-input-button" type="button">
+                <svg width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0v1h13V0H0Z" fill="#000" />
+                </svg>
+              </button>
+            </span>
+          </p>
+        </div>
+        <button class="button modal-search-button" type="submit">Найти</button>
+      </form>
+    </div>
   </div>
 </body>
 
