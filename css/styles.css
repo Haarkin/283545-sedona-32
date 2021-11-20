@@ -192,11 +192,6 @@ body {
   margin-top: -3px;
 }
 
-.page-header-logo {
-  width: 138px;
-  height: 76px;
-}
-
 .navigation-logo:focus {
   outline: 2px solid #6086a0;
 }
@@ -374,8 +369,6 @@ body {
 
 .popup-hotel-image {
   margin-right: 17px;
-  width: 48px;
-  height: 48px;
   border-radius: 50%;
 }
 
@@ -407,6 +400,8 @@ body {
   cursor: pointer;
   margin-left: 13px;
   margin-bottom: 6px;
+  border: none;
+  background-color: transparent;
   opacity: 0.6;
 }
 
@@ -420,12 +415,12 @@ body {
 
 .popup-trash-bin:focus {
   outline: none;
+  opacity: 1;
 }
 
 .popup-trash-bin:focus svg {
   outline: 3px solid #83B3D3;
   border-radius: 10px;
-  opacity: 1;
 }
 
 .popup-trash-bin:active svg {
@@ -711,6 +706,7 @@ body {
 }
 
 .background-container {
+  background-color: #6C9E42;
   background-image: url("../images/backgrounds/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -733,8 +729,6 @@ body {
 .index-welcome-picture {
   display: block;
   margin: 0 auto;
-  width: 458px;
-  height: 352px;
 }
 
 .sedona-title {
@@ -802,20 +796,6 @@ body {
   padding-top: 96px;
   padding-bottom: 18px;
   color: #FFFFFF;
-}
-
-.city-img {
-  width: 800px;
-  height: 384px;
-}
-
-.bridge-img {
-  width: 800px;
-  height: 384px;
-}
-
-.bridge-advantage {
-  height: 384px;
 }
 
 .advantages-item-large, 
@@ -1000,8 +980,8 @@ body {
 
 .control-label::before {
   content: "";
-  width: 21px;
-  height: 21px;
+  width: 20px;
+  height: 20px;
   background-color: #FFFFFF;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -1024,7 +1004,8 @@ body {
 .control-input:checked + .control-label::after {
   width: 12px;
   height: 10px;
-  margin-top: 6px;
+  margin-top: 5px;
+  margin-left: 5px;
   background-image: url('../images/icons/checked-checkbox.svg');
   content: "";
   grid-column: 1 / 2;
@@ -1216,7 +1197,9 @@ body {
 }
 
 .catalog-filter-container {
+  background-color: #615048;
   background-image: url("../images/backgrounds/catalog-background.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 20px;
   padding-left: 70px;
@@ -1229,7 +1212,7 @@ body {
   margin-right: 213px;
   font-size: 30px;
   text-transform: uppercase;
-  line-height: 38px;
+  line-height: 39px;
 }
 
 .catalog-filter {
@@ -1292,6 +1275,18 @@ body {
   background-color: #FFFFFF;
   outline: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
+}
+
+.sorting-type:hover .select-control {
+  outline: 2px solid #83B3D3;
+}
+
+.select-control:focus {
+  outline: 2px solid #83B3D3;
+}
+
+.select-control:active {
+  opacity: 0.3;
 }
 
 .sorting-button-container {
@@ -1541,10 +1536,21 @@ body {
   padding-top: 14px;
   padding-bottom: 12px;
   font: inherit;
-  font-size: 400;
   background-color: #FFFFFF;
   outline: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
+}
+
+.sorting-type-quantity:hover .select-control-quantity {
+  outline: 2px solid #83B3D3;
+}
+
+.select-control-quantity:focus {
+  outline: 2px solid #83B3D3;
+}
+
+.select-control-quantity:active {
+  opacity: 0.3;
 }
 
 .footer-container {
@@ -1554,15 +1560,18 @@ body {
 }
 
 .subscription-form {
+  background-color: #68A2CA;
   background-image: url("../images/backgrounds/background-footer.jpg");
   text-align: center;
   padding: 95px 240px;
   color: #FFFFFF;
+  background-size: cover;
 }
 
 .catalog-footer .subscription-form {
   padding: 63px;
   background-image: none;
+  background-color: #FFFFFF;
   color: #000000;
   margin-bottom: 76px;
 }
@@ -1573,7 +1582,6 @@ body {
 
 .subscription-form-title {
   text-transform: uppercase;
-  height: 50px;
   margin: 0;
   margin-bottom: 12px;
   font-size: 30px;
@@ -1586,6 +1594,10 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+}
+
+.index-submit-form p {
+  color: #FFFFFF;
 }
 
 .submit-form .email {
