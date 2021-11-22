@@ -635,6 +635,7 @@ body {
   font-size: 16px;
   top: 40px;
   left: calc(50% - 128px);
+  font-weight: normal;
 }
 
 .info-popup-text::before {
@@ -782,6 +783,11 @@ body {
   content: "— №" counter(advantages) " —";
   order: -1;
   margin-bottom: 30px;
+  color: #333333;
+}
+
+.advantage-container::after {
+  color: #FFFFFF;
 }
 
 .advantages-item .advantages-title {
@@ -870,7 +876,7 @@ body {
 
 .advantages-item-point .advantages-title {
   margin-bottom: 18px;
-  color: #333333;
+  color: #000000;
 }
 
 .advantages-reasons {
@@ -920,13 +926,13 @@ body {
 
 .breadcrumbs-item {
   position: relative;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .breadcrumbs-item::after {
   position: absolute;
   top: 10px;
-  right: -20px;
+  right: -10px;
   width: 8px;
   height: 8px;
   background-image: url("../images/icons/breadcrumbs-arrow.svg");
@@ -948,6 +954,7 @@ body {
   display: inline-block;
   box-sizing: border-box;
   padding-left: 0;
+  margin-left: -3px;
 }
 
 .breadcrumbs-link:hover {
@@ -1042,9 +1049,8 @@ body {
 
 .hotel-search-title {
   text-transform: uppercase;
-  height: 50px;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 29px;
   font-size: 30px;
   line-height: 36px;
 }
